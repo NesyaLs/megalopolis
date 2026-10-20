@@ -1,0 +1,11 @@
+*~
+dist/
+node_modules/
+.parcel-cache
+src/*.js
+tmp*
+coverage/
+*.log
+.DS_Store
+.vscode/
+.idea/

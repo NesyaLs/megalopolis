@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "nodenext",
+        "target": "es2020",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "declaration": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "strictNullChecks": true,
+        "moduleResolution": "nodenext",
+        "types": ["node", "jest"]
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

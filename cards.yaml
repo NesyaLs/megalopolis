@@ -1,0 +1,60 @@
+---
+# Objective cards. "score" is the value of the card: the sum of the
+# values of the objectives in play gives the score to reach to win.
+# A district is "en bordure" when at least one of its 4 sides is not
+# next to another district, otherwise it is "au centre".
+# A block is a group of connected districts of the same type.
+cards:
+  zero_impasse:
+    score: 5
+    rule: |
+      -1pt par extrémité de route en impasse (une extrémité qui ne
+      continue pas dans le quartier voisin)
+  poumons_verts:
+    score: 6
+    rule: |
+      1pt par parc dans la ville
+      -2pt par quartier industriel voisin d'au moins un parc
+  grand_boulevard:
+    score: 7
+    rule: |
+      1pt tous les 3 tronçons de la route la plus longue
+  boucle_urbaine:
+    score: 8
+    rule: |
+      1pt par tronçon de chaque route qui forme une boucle, c'est-à-dire
+      une route sans aucune impasse
+  centre_commercial:
+    score: 9
+    rule: |
+      1pt par quartier commercial du plus grand bloc commercial
+      -1pt par quartier commercial hors de ce bloc
+  cite_dortoir:
+    score: 10
+    rule: |
+      2pt par quartier résidentiel dont tous les voisins sont des
+      quartiers résidentiels ou des parcs
+  zone_franche:
+    score: 11
+    rule: |
+      1pt par quartier industriel en bordure de ville
+      -1pt par quartier industriel au centre de la ville
+  ceinture_verte:
+    score: 12
+    rule: |
+      1pt par parc en bordure de ville
+      -1pt par parc au centre de la ville
+  mixite_sociale:
+    score: 13
+    rule: |
+      1pt par ligne et par colonne de la ville contenant les 4 types
+      de quartiers
+  bon_voisinage:
+    score: 14
+    rule: |
+      1pt par quartier résidentiel voisin à la fois d'un quartier
+      commercial et d'un parc
+  quartiers_jumeaux:
+    score: 15
+    rule: |
+      1pt toutes les 2 paires de quartiers voisins de même type
